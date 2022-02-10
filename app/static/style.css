@@ -1,0 +1,226 @@
+html {
+	font-family: 'Marcellus', sans-serif;
+}
+
+body {
+	background-color: #000;
+	margin: 0;
+	color: rgba(49,108,158);
+}
+
+a {
+	transition: color 0.3s ease;
+	font-family: 'Rubik', sans-serif;
+	color: #316C9E;
+	text-decoration: none;
+	font-weight: 700;
+}
+
+a:hover {
+	color: rgba(255,211,81);
+}
+
+html body header {
+	display: flex;
+	justify-content: space-between;
+	background-color: #000;
+	box-shadow: 3px 0 5px #aaa;
+	padding: 15px 30px;
+	position: relative;
+	z-index: 2;
+}
+
+header .logo {
+	display: flex;
+}
+
+
+html body nav ul {
+	list-style-type: none;
+	font-size: 16px;
+}
+
+html body nav ul li {
+	display: inline-block;
+}
+
+html body nav ul li a {
+	padding: 0 15px;
+}
+
+.hero {
+	position: relative;
+	z-index: 1;
+	display: flex;
+	flex-wrap: wrap;
+	min-width: 250px;
+	background-color: #111;
+	padding: 20px 50px;
+	justify-content: center;
+}
+
+.hero .hero-content {
+	width: 1200px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	min-width: 250px;
+}
+
+.hero h1 {
+	font-family: 'Rufina', sans-serif;
+	font-size: 50px;
+	font-weight: 700;
+	margin-bottom: 0;
+	margin-top: 0;
+}
+
+.hero p {
+	font-family: 'Rubik', sans-serif;
+	font-size: 20px;
+	margin-bottom: 50px;
+}
+
+.left {
+	width: 600px;
+	align-self: center;
+}
+
+.right {
+	width: 600px;
+	align-self: center;
+}
+
+.btn {
+	background-color: rgba(255,211,81);
+	font-size: 15px;
+	color: #316C9E;
+	border: none;
+	padding: 15px 30px;
+	border-radius: 5px;
+}
+
+.btn:hover {
+	background-color: rgba(255,211,81,0.8)
+}
+
+a.btn {
+	color: #316C9E;
+}
+
+.skills {
+	background-color: #fff;
+	padding: 5px 5px;
+	margin: 0 10px;
+	border-radius: 5px;
+	display: flex;
+}
+
+.center {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	min-width: 250px;
+}
+
+.content {
+	width: 1200px;
+	display: flex;
+	flex-wrap: wrap;
+	min-width: 60%;
+}
+
+.row {
+	display: flex;
+	flex-direction: row;
+}
+
+.yellow {
+	color: rgba(255,211,81)
+}
+
+.padded {
+	padding: 20px 30px;
+}
+
+.padded p {
+	font-size: 20px;
+}
+
+.vert-pad {
+	padding: 20px 0;
+}
+
+.card {
+	background-color: #333;
+	box-shadow: 0 1px 2px #ddd;
+	border: solid 1px #ddd;
+	border-radius: 5px;
+	padding: 20px 30px;
+}
+
+.third {
+	width: 360px;
+	margin: 20px;
+}
+
+.contact-form input {
+	font-family: 'Rubik', sans-serif;
+	font-size: 15px;
+	color: #fff;
+	background-color: #333;  
+	border: none;
+	height: 30px;
+	padding: 5px 10px;
+	margin-bottom:15px;
+	border-radius: 5px;
+	width: 100%;
+}
+
+.contact-form textarea {
+	font-family: 'Rubik', sans-serif;
+	font-size: 15px;
+	color: #fff;
+	background-color: #333;  
+	border: none;
+	height: 100px;
+	padding: 15px 10px;
+	resize: none;
+	border-radius: 5px;
+	margin-bottom:15px;
+	width: 100%;
+}
+
+.full-width {
+	width: calc(100% + 20px);
+}
+
+.footer {
+	padding: 80px 0 0 0;
+	background-color: #111;
+	color: #fff;
+}
+
+.social-links {
+	margin-top: 20px;
+	margin-bottom: 40px;
+}
+
+.social-links a {
+	margin: 0 10px;
+}
+
+.social {
+	background-color: #fff;
+	padding: 10px;
+	border-radius: 15px;
+}
+
+.made-with {
+	padding: 0 30px;
+	color: #555;
+}
+
+.bg {
+	background-color: #111;
+}
