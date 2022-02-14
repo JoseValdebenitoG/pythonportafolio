@@ -133,7 +133,7 @@ a.btn {
 
 .row {
 	display: flex;
-	justify-content: center;
+	justify-content: flex;
 	flex-direction: row;
 	min-width: 250px;
 }
