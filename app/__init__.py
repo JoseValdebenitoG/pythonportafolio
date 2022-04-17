@@ -11,5 +11,6 @@ def create_app():
     from . import portfolio
 
     app.register_blueprint(portfolio.bp)
+    
 
     return app

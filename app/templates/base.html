@@ -1,42 +1,50 @@
 <!doctype html>
-<title>{% block title %}{% endblock %} - Portafolio</title>
-<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
-<link rel="preconnect" href="https://fonts.googleapis.com"> 
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com"> 
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-<link href="https://fonts.googleapis.com/css2?family=Marcellus&display=swap" rel="stylesheet">
-
+<head>
+	<meta charset="UTF-8">
+	<title>{% block title %}{% endblock %} - Jose Valdebenito</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+	<script type="text/javascript" src="static/js/functions.js"></script>
+	<link rel="preconnect" href="https://fonts.googleapis.com"> 
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+	<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Amaranth:ital,wght@0,400;0,700;1,700&display=swap" rel="stylesheet">
+</head>
 <body>
-	<header>
-		<a class='logo'  href='{{ url_for('portfolio.index') }}' ><img  src='{{ url_for('static', filename='logoDev.png') }}' width=60px /></a>
-		<nav>
-			<ul>
-				<li><a href='{{ url_for('portfolio.index') }}'>Inicio</a></li>
-				<li><a href='{{ url_for('portfolio.portfolio') }}'>Portafolio</a></li>
-				<li><a href='{{ url_for('portfolio.contact') }}'>Contacto</a></li>
-			</ul>
-		</nav>
-	</header>
+	<!-- Menu -->
+	<nav class="menu">
+		<div class="hamburger" onclick="showMenu()">
+			<span></span><span></span><span></span>
+		</div>
+		<a class="logo"  href='{{ url_for('portfolio.index') }}' ><img  src='{{ url_for('static', filename='logoDev.png') }}' width=60px /></a>
+		<ul id="sliding_menu">
+			<li><span class="close" onclick="hideMenu()"><</span></li>
+			<li><a href='{{ url_for('portfolio.index') }}'>Inicio</a></li>
+			<li><a href='{{ url_for('portfolio.portfolio') }}'>Portafolio</a></li>
+			<li><a href='{{ url_for('portfolio.contact') }}'>Contacto</a></li>
+		</ul>
+	</nav>
+	
 	<section>{% block content %}{% endblock %}</section>
 	<div class='footer'>
 		<div class='center full-width'>
-			<div class='row'>
+			<div class='row center'>
 				<h3>Contactame :)</h3>
 			</div>
 		</div>
 		<div class='center full-width'>
-			<div class='row'>
+			<div class='row cemter'>
 				<p>O tambien puedes seguirme en mis redes sociales</p>
 			</div>
 		</div>
 		<div class='center full-width social-links'>
 			<div class='row'>
-				<a target='_blank' href='https://twitter.com/JValdebenitoG'><img class='social' width=30 src='{{ url_for('static', filename='twitter.png') }}' /></a>
-				<a target='_blank' href='https://www.instagram.com/josev.dev/'><img class='social' width=30 src='{{ url_for('static', filename='instagram.png') }}' /></a>
-				<a target='_blank' href='https://github.com/josevaldebenitog'><img class='social' width=30 src='{{ url_for('static', filename='github.png') }}' /></a>
-				<a target='_blank' href='https://www.linkedin.com/in/jvaldebenitog/'><img class='social' width=30 src='{{ url_for('static', filename='linkedin.png') }}' /></a>
+				<a target='_blank' href='https://twitter.com/JValdebenitoG'><img class='social' width=40 src='{{ url_for('static', filename='twitter.png') }}' /></a>
+				<a target='_blank' href='https://www.instagram.com/josev.dev/'><img class='social' width=40 src='{{ url_for('static', filename='instagram.png') }}' /></a>
+				<a target='_blank' href='https://github.com/josevaldebenitog'><img class='social' width=40 src='{{ url_for('static', filename='github.png') }}' /></a>
+				<a target='_blank' href='https://www.linkedin.com/in/jvaldebenitog/'><img class='social' width=40 src='{{ url_for('static', filename='linkedin.png') }}' /></a>
 			</div>
 		</div>
 		<div class='made-with'>

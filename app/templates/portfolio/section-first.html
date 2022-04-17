@@ -1,28 +1,27 @@
 <div class='center'>
-	<div class='content'>
-		<div class='row vert-pad'>
-			<div class='left padded'>
-				<h1>Desarrollo con pasión aplicaciones y sitios web para personas.</h1>
-				<p>Soy desarrolador autodidacta y desarrollo aplicaciones para mejorar cada vez más. Esta web la construí desde cero con Python y Flask!</p>
-				<p>Puedes ver algunos de mis proyectos en mi <a class='yellow' href='{{ url_for('portfolio.portfolio') }}'>portafolio.</a></p>
-				<br/>
-				<h1>Soy un amante de la tecnología!</h1>
-				<p>Desde siempre aprendiendo de forma autodidacta acerca de la evolucion del hardware y software, conociendo sistemas unix, siendo usuario de linux desde 2006 con distintas distribuciones (ubuntu, debian, manjaro) y ahora usuario de macOS. y manejo de las respectivas terminales.</p>
-			</div>
-			<div class='right padded'>
-				<h1>Mis conocimientos actuales.</h1>
-				<p>Mis editores de texto favoritos son: NeoVim, VSCode.</p>
-				<p>Por ahora manejo tecnologías como HTML, CSS, Python con sus librerias TKinter y Flask. Ademas conozco y manego sistema de versiones git y github. Pretendo seguir aprendiendo aun más! </p>
-				<div class='row'>
-					<img class='skills' width=40 src='{{ url_for('static', filename='logoPython.png') }}' />
-					<img class='skills' width=90 src='{{ url_for('static', filename='logoFlask.png') }}' />
-					<img class='skills' width=40 src='{{ url_for('static', filename='logoHtml.png') }}' />
-					<img class='skills' width=30 src='{{ url_for('static', filename='logoCss.png') }}' />
-					<img class='skills' width=80 src='{{ url_for('static', filename='logoMysql.png') }}' />
-				</div>
-				<h1>Proyectos a futuro.</h1>
-				<p>Mientras sigo ampliando conocimientos en python y tecnologias web, estoy aprendiendo desarrollo mobile nativo en Swift ademas de aprender a utilizar el IDE XCode.</p>
-			</div>
+	<div class='about'>
+		<h1 class="title">Desarrollo con pasión aplicaciones y sitios web para personas.</h1>
+		<p>Soy desarrolador autodidacta y desarrollo aplicaciones para mejorar cada vez más. Esta web la construí desde cero con Python y Flask!</p>
+		<p>Puedes ver algunos de mis proyectos en mi <a class='yellow' href='{{ url_for('portfolio.portfolio') }}'>Portafolio.</a></p>
+		<br/>
+		<h1 class="title">Soy un amante de la tecnología!</h1>
+		<p>Desde siempre aprendiendo de forma autodidacta acerca de la evolucion del hardware y software, conociendo sistemas unix,</p>
+		<p>Soy usuario de linux desde 2006 con distintas distribuciones (ubuntu, debian, manjaro) y ahora usuario de macOS. y manejo de las respectivas terminales </p>
+		<h1 class="title">Mis conocimientos actuales.</h1>
+		<p>Mis editores de texto favoritos son: NeoVim, VSCode.</p>
+		<p>Por ahora manejo tecnologías como HTML, CSS, Python con sus librerias TKinter y Flask. Ademas conozco y manego sistema de versiones git y github. Pretendo seguir aprendiendo aun más! </p>
+		<br/>
+		<div class='center'>
+			<img class='skills' width=40 src='{{ url_for('static', filename='logoPython.png') }}' />
+			<img class='skills' width=90 src='{{ url_for('static', filename='logoFlask.png') }}' />
+			<img class='skills' width=40 src='{{ url_for('static', filename='logoHtml.png') }}' />
+			<img class='skills' width=30 src='{{ url_for('static', filename='logoCss.png') }}' />
+			<img class='skills' width=80 src='{{ url_for('static', filename='logoMysql.png') }}' />
 		</div>
+		<h1 class="title">Proyectos a futuro.</h1>
+		<p>Mientras sigo ampliando conocimientos en python y tecnologias web</p>
+		<p>por ahora estoy agregando bootstrap y javascript para mejorar mis web</p>
+		<p>y pretendo iniciarme en desarrollo mobile nativo en Swift ademas de aprender a utilizar el IDE XCode.</p>
+		<br/>
 	</div>
 </div>
