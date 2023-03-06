@@ -4,7 +4,7 @@
 	<title>{% block title %}{% endblock %} - Jose Valdebenito</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
-	<script type="text/javascript" src="static/js/functions.js"></script>
+	<link rel="shortcut icon" src="{{ url_for('static', filename='logoCircle.ico') }}" href="{{ url_for('static', filename='logoCircle.ico') }}" mce_href="{{ url_for('static', filename='logoCircle.ico') }}" type="image/x-icon">
 	<link rel="preconnect" href="https://fonts.googleapis.com"> 
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
 	<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap" rel="stylesheet">
@@ -31,18 +31,18 @@
 	<div class='footer'>
 		<div class='center full-width'>
 			<div class='row center'>
-				<h3>Contactame :)</h3>
+				<h3>Contáctame :)</h3>
 			</div>
 		</div>
 		<div class='center full-width'>
-			<div class='row cemter'>
-				<p>O tambien puedes seguirme en mis redes sociales</p>
+			<div class='row center'>
+				<p>O también puedes seguirme en mis redes sociales</p>
 			</div>
 		</div>
 		<div class='center full-width social-links'>
 			<div class='row'>
 				<a target='_blank' href='https://twitter.com/JValdebenitoG'><img class='social' width=40 src='{{ url_for('static', filename='twitter.png') }}' /></a>
-				<a target='_blank' href='https://www.instagram.com/josev.dev/'><img class='social' width=40 src='{{ url_for('static', filename='instagram.png') }}' /></a>
+				<a target='_blank' href='https://www.instagram.com/blackshirtdev/'><img class='social' width=40 src='{{ url_for('static', filename='instagram.png') }}' /></a>
 				<a target='_blank' href='https://github.com/josevaldebenitog'><img class='social' width=40 src='{{ url_for('static', filename='github.png') }}' /></a>
 				<a target='_blank' href='https://www.linkedin.com/in/jvaldebenitog/'><img class='social' width=40 src='{{ url_for('static', filename='linkedin.png') }}' /></a>
 			</div>
@@ -53,5 +53,6 @@
 			</div>
 		</div>
 	</div>
+	<script type="text/javascript" src="static/js/functions.js"></script>
 </body>
 
