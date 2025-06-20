@@ -11,7 +11,12 @@ body {
 body h1 {
 	color: #316C9E;
 }
-
+section {
+	width: 100%;
+	max-width: 75vw;
+	margin: 0 auto;
+	padding: 0 20px;
+}
 
 /*=== MENU ===*/
 .menu {
@@ -23,12 +28,12 @@ body h1 {
 	box-shadow: 3px 18px 10px -20px rgba(48, 54, 219, 0.95);
 }
 .menu .logo {
-	margin-left: 20px;
+	margin-left: 40px;
 }
 
 .menu ul {
 	float: right;
-	margin-right: 10px;
+	margin-right: 40px;
 }
 
 .menu ul li {
@@ -63,8 +68,11 @@ body h1 {
 		display: block;
 		height: 3px;
 	}
-	.menu .logo {
-		margin-left: 50px;
+	.menu {
+		display: flex;
+		flex-direction: inline;
+		justify-content: center;
+
 	}
 	
 	.menu {
@@ -114,7 +122,17 @@ body h1 {
 	body p {
 		font-size: 12px;
 	}
+	.hero-content {
+		grid-column: 1 / -1;
+	}
+
+	.hero-right img {
+		width: 250px;
+		margin-top: 20px;
+		margin-left: 0;
+	}
 }
+
 
 /*=== HERO ===*/
 .hero {
@@ -213,8 +231,9 @@ body h1 {
 	border-radius: 20px;
 	padding: 20px 30px;
 	margin: 30px 50px;
+	min-width: 75vw;
 	box-shadow: 1px 10px 40px -20px rgba(255,211,81,0.9) ;
-	/*box-shadow: 1px 20px 40px -20px rgba(48, 85, 219, 0.95);*/
+	/* box-shadow: 1px 20px 40px -20px rgba(48, 85, 219, 0.95); */
 }
 
 .about p {
